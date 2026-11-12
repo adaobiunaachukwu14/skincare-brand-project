@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf6;
+    color: #382a25;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    font-size: 25px;
+    color: #8d554b;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #382a25;
+}
+
+.hero {
+    min-height: 500px;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    background-color: #f4e5dc;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    background: #8d554b;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.about {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.about h2,
+.products h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+.products {
+    padding: 70px 8%;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddc5b9;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #382a25;
+    color: white;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
